@@ -2,10 +2,19 @@ var robot = require("robotjs");
 var express = require("express");
 var app = express();
 
+var path = require('path');
+var index_file_path = path.join(__dirname,'assests','index.html');
+
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
+});
+
+app.use(express.static('assests'));
+
+app.get('/',(req,res)=>{
+    res.sendFile(index_file_path);
 });
 
 app.get('/keytap/:key', function (req, res) {

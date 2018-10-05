@@ -12,7 +12,7 @@ It allows user to choose key which it wants nodeJS to press keypress/keydown.
 + Install project dependencies using yarn. Use Command : yarn install
 + Now Project dependencies are installed.
 + Type command yarn start.
-+ It will start project as below -
-![alt text](/assests/images/appstart.png)
++ It will start project as below - 
++ ![alt text](/assests/images/appstart.png)
 
 Author - Rishi Pandya.
